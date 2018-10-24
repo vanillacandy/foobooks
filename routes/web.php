@@ -10,7 +10,19 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Route::get('/', 'WelcomeController');
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/books/{title?}', function ($title=null) {
+    if($title ==null){
+        return 'You did not sepcify a title';
+    }else{
+        return 'You are viewing the book: '.$title;
+    }
+
+});
+Route::any('/practice/{n?}', 'PracticeController@index');
+
