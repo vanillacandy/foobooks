@@ -1,6 +1,12 @@
 <?php
 
 return [
+    'nav' =>[
+        '/books' => 'Books',
+        '/practice' => 'Practice',
+        '/about' => 'About',
+        '/contact' => 'Contact',
+    ],
 
     /*
     |--------------------------------------------------------------------------
